@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    color: aliceblue;
+}
+
+header {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+}
+
+#header-img {
+    height: 70px;
+    width:auto;
+    margin-left: 5%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 4%;
+}
+
+ul li a {
+    margin: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav{
+    width:100%;
+    position: fixed;
+}
+
+.page {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://images4.alphacoders.com/845/thumb-350-84524.jpg");
+    overflow: hidden;
+}
+
+h1 { 
+    font-size: 1.5em;
+    font-weight:900px;
+    text-align: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label input {
+    margin-bottom: 15px;
+    margin-top: 2px;
+    width: 310px;
+    padding: 5px;
+}
+
+#submit {
+    align-self: center;
+    width: 150px;
+    padding: 2px;
+    text-align: right;
+    font-size: 1em;
+    font-weight: 900;
+    background-color: #f1c40f;
+}
+
+#features,
+#games,
+#pricing,
+.page {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.page::after,
+#features::after,
+#games::after,
+#pricing::after{
+    content: '';
+    background-color: #000;
+    position: absolute;
+    opacity: 0.2;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  
+.page * ,
+#features *,
+#games *,
+#pricing * {
+    position: relative;
+    z-index: 1;
+}
+
+#games {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url("https://media.gettyimages.com/photos/close-up-of-chessmen-on-chessboard-with-the-focus-on-a-queen-picture-id1280004365?k=6&m=1280004365&s=612x612&w=0&h=4AH6sKKyDywm_yLQWTYWiR6P_3MgkGM1y815kIRaCa0=");
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+#features {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    line-height: 1.5em;
+    display: grid;
+    background-image: url("https://media.gettyimages.com/photos/circa-1960-stilllife-of-a-chessboard-with-its-dark-and-light-game-picture-id3205792?k=6&m=3205792&s=612x612&w=0&h=Q7jVIiLkKH3UvF0GT-lbaKrrQzWH34eHilpQfObmReU=");
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex i {
+    order:1;    
+    align-self: center;
+    font-size:60px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.text {
+    order: 2;
+    padding-left: 40px;
+    flex-wrap: wrap;
+}
+
+.text h2 {margin-bottom: 0;}
+
+.text h2 + p {margin: 0px;}
+
+#pricing {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 0;
+    width: 100%;
+    background-image: url("https://media.gettyimages.com/photos/the-black-king-picture-id154960322?k=6&m=154960322&s=612x612&w=0&h=r8sp4Ow8pujCMieDPAluoqFzGt3yPYUI7AQForfhx_A=");
+}
+
+.buy {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    box-shadow: 0px 0px 0px 3px rgba(40,167,69,0.64);
+-webkit-box-shadow: 0px 0px 0px 3px rgba(40,167,69,0.64);
+-moz-box-shadow: 0px 0px 0px 3px rgba(40,167,69,0.64);
+}
+
+.text-2 {
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    margin-top: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    width: 100%;
+    position: absolute;;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-self: flex-end;
+    padding: 5px;
+}
+
+footer div a {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+footer div a, footer p {
+    text-decoration: none;
+    color: aliceblue;
+    flex-wrap: wrap;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer div a + footer p {
+    margin: 0;
+} 
+
+footer p {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        font-size: 0.7em;
+    }
+    #video {
+        
+    }
+    footer p {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #games {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #pricing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        font-size: 0.9em;
+    }
+    button {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+    .buy {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    footer p {
+        margin-right: 0;
+        margin-left:15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #pricing {
+        font-size: 0.9em;
+        justify-content: flex-start;
+        height: 650px;
+    }
+    #games {
+        height: 700px;
+    }
+    #header-img {
+        padding-left: 8%;
+        height: 40px;
+        width: auto;
+    }
+    .page {
+        height: 410px;
+    }
+    ul {
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 0.7em;
+        margin: 0 0 0 5%;
+    }
+
+    #features {font-size: 0.9em;}
+    .text-2 {width: 100%;}
+    button {transform: scale(0.8);}
+}
+
+@media only screen and (max-width: 380px) {
+    #features {
+        line-height: unset;
+        font-size: 0.9em;
+    }
+    input {transform: scale(0.9);}
+    h1 {
+        font-size:1.3em;
+    }
+}  
+@media only screen and (max-width: 768px) {
+    #header-img {margin-left: 10%;}
+    body {
+        font-size:1em
+    }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 816px) and (max-width:1500) {
+    .page {height: 100vw;}
+    #features {height: 100vw;}
+}

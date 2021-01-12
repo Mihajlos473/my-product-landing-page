@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My product landing page</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://tse2.mm.bing.net/th?id=OIP.iak3gAFJss3jU7epGjbG1gHaEK&pid=Api&P=0&w=293&h=166" alt="An image of a chess pawn">
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link" href="#games">Videos with our sets  </a>
+                </li>
+                
+                <li>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>            
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page">
+        <h1><strong>Handcrafted, home-made masterpieces</strong></h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Enter your email adress"/>
+            </label>    
+            <label for="submit">   
+                <input type="submit" id="submit" value="GET STARTED"/>
+            </label>
+        </form>
+    </div>
+
+    <div id="features">
+        <div class="flex">
+            <i class="fa fa-star"></i>
+            <div class="text">
+                <h2>Premium Materials</h2>
+                <p>We make chess sets using the best materials possible. This wil increase the longevity of your purchase.</p>
+            </div>
+        </div>
+        <div class="flex">
+            <i class="fa fa-truck"></i>
+            <div class="text">    
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your chess set as soon as possible. We also provide free returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div class="flex">
+            <i class="fa fa-trophy"></i>
+            <div class="text">    
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults. Plus, the design is top-notch too!</p>
+            </div>
+        </div>
+    </div>
+    <div id="games" class="page">
+        <figure>
+            <iframe id="video"src="https://www.youtube.com/embed/8S3lKm9gw3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Dubrovnik chess set - mine and Bobby Fischer's favourite!</figcaption>
+        </figure>  
+            
+        <figure>    
+            <iframe src="https://www.youtube.com/embed/jVadgRm-ut0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>A truly marvelous and elegant chess set! IM Anna Rudolf showcases it best!</figcaption>
+        </figure>
+
+        <figure>   
+            <iframe src="https://www.youtube.com/embed/qZEhFaviIP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>FIDE needs no introduction. Its a beautiful wooden chess set.</figcaption>
+        </figure>
+    </div>
+
+    <div id="pricing">
+        <div class="text-2">
+            <h2>
+                Dubrovnik chess set
+            </h2>
+            <p><strong>$30</strong></p>
+            
+            <p>
+                Plastic, but durable pieces. Great for chess tournaments with a pleasing design!
+            </p>
+            <form class="buy" action="#">
+                <button type="button" value="dubrovnik">Buy now!</button>
+            </form>          
+        </div>
+        
+        <div class="text-2">
+            <h2>
+                Stone white chess set
+            </h2>
+            <p><strong>$1000</strong></p>
+        
+            <p>
+                Not only extremely durable, but also beatufiully designed and crafted by our artists.
+            </p>            
+            <form class="buy" action="#">
+                <button type="button" value="stone">Buy now!</button>
+            </form>        
+        </div>
+        
+        <div class="text-2">
+            <h2>
+                FIDE chess set
+            </h2>
+            <p><strong>$100</strong></p>
+       
+            <p>
+                Chess set used on big FIDE official events, such as World Chess Championship.
+            </p>                        
+            <form class="buy" action="#">
+                <button type="button" value="FIDE">Buy now!</button>
+            </form>
+        </div>        
+    </div>
+    <footer>
+        <div id="flex"> 
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Contact</a>
+        </div>
+        <p><i class="fa fa-copyright"></i> Copyright 2021, Mihajlo Smiljanic</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+</body>
+</html>
